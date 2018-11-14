@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+int exampleForVariableScope = 5;
 
 // main() is where program execution begins.
 int main() {
@@ -29,5 +30,6 @@ int main() {
             an assignment (constant, like 20)
     */
 
-
+   // Local vars overwrite global ones
+   int exampleForVariableScope = 10;
 }
