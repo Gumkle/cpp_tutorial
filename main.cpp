@@ -74,6 +74,28 @@ int main() {
         
     */
 
+    /*
+        Operators:
+            - bitwise: 
+                - & AND
+                - | OR
+                - ^ XOR
+                - ~ "flips bits" (0011 to 1100)
+                - A << 2 moves A value 2 bits to left
+                - A >> 2 moves A value 2 bits to right
+            - misc:
+                - sizeof variable;
+                - condition? true: false;
+                - type(otherType) - casting vars
+                - & returns address of var
+                - * points to var (represented by address)
+    */
+
+    /*
+        Function call types:
+            - 
+    */
+
     exampleForExternStorage = 10;
     write_extern();
 
