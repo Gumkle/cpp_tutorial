@@ -13,6 +13,12 @@ int exampleForVariableScope = 5;
 int exampleForExternStorage;
 extern void write_extern();
 
+/*
+    Functions have to be declared before they are used, but you can
+    initialize them (their body) after usage
+*/
+void referenceFunctionExample(int &a, int &b);
+
 // main() is where program execution begins.
 int main() {
      
@@ -52,7 +58,7 @@ int main() {
         global - declared outside functions, scope
         in whole file
     */
-    int exampleForVariableScope = 10;
+    // int exampleForVariableScope = 10;
 
     /*
         Storage classes
@@ -73,6 +79,8 @@ int main() {
             for further explanation).
         
     */
+    // exampleForExternStorage = 10;
+    // write_extern();
 
     /*
         Operators:
@@ -93,10 +101,59 @@ int main() {
 
     /*
         Function call types:
+            - value - copies value to function body,
+            - pointer - copies address of a variable
+                to function body and in there references
+                the original var at this address
+            - reference - copies reference to a value
+                to the function body
+    */
+    // int a = 10;
+    // int b = 15;
+    // // values storing memory addresses have to be of type*
+    // int *aRef = &a;
+    // int *bRef = &b;
+    // // addresses 
+    // cout<<aRef<<", "<<bRef<<endl;
+    // // values pointed by addresses
+    // cout<<*aRef<<", "<<*bRef<<endl;
+    // // values
+    // cout<<a<<", "<<b<<endl;
+    // referenceFunctionExample(a, b);
+    // // values changed by the function
+    // cout<<a<<", "<<b<<endl;   
+
+    /*
+        Arrays
+        type name [size];
+    */
+    // // One way of declaring array
+    // string animals [] = {"dog", "cat", "another dog"};
+    // // Another way of declaring array
+    // string names [5];
+    // names[0] = "Dawid";
+    // names[1] = "Sara";
+    // names[2] = "Ula";
+    // names[3] = "Lech";
+    // names[4] = "Wiesława";
+    // for(int i = 0; i<3; i++){
+    //     cout<<animals[i]<<endl;
+    // }
+
+    /*
+        Pointers
+            - if there's no exact address to be assigned to pointer
+            at the moment of declaration then it is good thing to 
+            assign NULL to it, 
+            - you can use operators +, -, ++, -- with them,
+            - you can make an array of pointers *ptr[3];
+            - you can make pointer to pointer (type**),
             - 
     */
 
-    exampleForExternStorage = 10;
-    write_extern();
+}
 
+void referenceFunctionExample (int &a, int &b){
+    a = 15; 
+    b = 20;
 }
