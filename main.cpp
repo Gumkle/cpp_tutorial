@@ -1,5 +1,6 @@
 #include <iostream>
 #include "extern_file.cpp"
+#include "main_menu/main_menu.cpp"
 
 //Defining constants - no semicolons, #define driective 
 #define AGE 18
@@ -12,6 +13,9 @@ int exampleForVariableScope = 5;
 
 int exampleForExternStorage;
 extern void write_extern();
+// externs can be chained, file included by included file is also
+// visible and therefore its method can be executed
+extern void secondExternTest();
 
 /*
     Functions have to be declared before they are used, but you can
@@ -21,7 +25,9 @@ void referenceFunctionExample(int &a, int &b);
 
 // main() is where program execution begins.
 int main() {
-     
+    // secondExternTest();
+    MainMenu mainMenu;
+    
     /*
         It appears that if you put single string in
         multiple lines then it won't work.

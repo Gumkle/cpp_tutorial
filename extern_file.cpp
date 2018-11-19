@@ -1,4 +1,6 @@
 #include <iostream>
+#include "second_extern.cpp"
+
 using namespace std;
 extern int exampleForExternStorage;
 
