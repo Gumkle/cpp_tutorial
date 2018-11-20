@@ -26,7 +26,7 @@ void referenceFunctionExample(int &a, int &b);
 // main() is where program execution begins.
 int main() {
     // secondExternTest();
-    MainMenu mainMenu;
+    // MainMenu mainMenu;
     
     /*
         It appears that if you put single string in
@@ -155,6 +155,27 @@ int main() {
             - you can make an array of pointers *ptr[3];
             - you can make pointer to pointer (type**),
             - 
+    */
+
+   /*
+        IO controll
+            Libs:
+                - iostream - cin, cout, cerr, clog,
+                - iomanip - formatted I/O, parameters,
+                - fstream - file processing
+            cerr:
+                - every stream to it displays immiediately,
+            clog:
+                - each insertion is held in a buffer until buffer is
+                filled or flushed
+   */
+
+    /*
+        Structures
+            Structures are a little bit like arrays in PHP - they
+            hold variables of many types, but first they have to
+            be defined. Struct is a type consisting attributes of 
+            other types
     */
 
 }

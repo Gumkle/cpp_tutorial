@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class MainMenu {
     private: 
         static const int OPTIONS_QUANTITY = 10;
-
+        static const string OPTIONS [3] = {"fsd", "asdf", "asdf"};
         int initializeMainMenuLoop() {
             int input;
             cin >> input;
@@ -40,7 +41,7 @@ class MainMenu {
                     throw invalid_argument("Given opiton is invalid");
                 }
             } catch (const invalid_argument& e) {
-                cout << e.what() << endl;
+                cerr << e.what() << endl;
             }
 
         }
