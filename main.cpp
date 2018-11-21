@@ -1,6 +1,7 @@
 #include <iostream>
 #include "extern_file.cpp"
 #include "main_menu/main_menu.cpp"
+#include "data_structures.cpp"
 
 //Defining constants - no semicolons, #define driective 
 #define AGE 18
@@ -12,6 +13,7 @@ using namespace std;
 int exampleForVariableScope = 5;
 
 int exampleForExternStorage;
+extern void dataStructuresPresentation();
 extern void write_extern();
 // externs can be chained, file included by included file is also
 // visible and therefore its method can be executed
@@ -176,15 +178,7 @@ int main(int argc, char *argv[]) {
                 - each insertion is held in a buffer until buffer is
                 filled or flushed
    */
-
-    /*
-        Structures
-            Structures are a little bit like arrays in PHP - they
-            hold variables of many types, but first they have to
-            be defined. Struct is a type consisting attributes of 
-            other types
-    */
-
+  dataStructuresPresentation();
 }
 
 void referenceFunctionExample (int &a, int &b){
