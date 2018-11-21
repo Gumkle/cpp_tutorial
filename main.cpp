@@ -24,10 +24,17 @@ extern void secondExternTest();
 void referenceFunctionExample(int &a, int &b);
 
 // main() is where program execution begins.
-int main() {
+// arguments in main represent arguments sent from console:
+//  argc is for argument count, and argv argumen vector
+int main(int argc, char *argv[]) {
     // secondExternTest();
     // MainMenu mainMenu;
-    
+
+    // cout<<"Liczba argumentow: "<<argc<<endl;
+    // for(int i=0; i<argc; i++){
+    //     cout<<"Argument "<<i<<": "<<argv[i]<<endl;
+    // }
+
     /*
         It appears that if you put single string in
         multiple lines then it won't work.
