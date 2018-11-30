@@ -2,6 +2,7 @@
 #include "extern_file.cpp"
 #include "main_menu/main_menu.cpp"
 #include "data_structures.cpp"
+#include "classes_objects/Box.cpp"
 
 //Defining constants - no semicolons, #define driective 
 #define AGE 18
@@ -178,7 +179,10 @@ int main(int argc, char *argv[]) {
                 - each insertion is held in a buffer until buffer is
                 filled or flushed
    */
-  dataStructuresPresentation();
+//   dataStructuresPresentation();
+
+    Box Box1(5, 10, 15);
+    cout << Box1.getVolume() << endl;
 }
 
 void referenceFunctionExample (int &a, int &b){

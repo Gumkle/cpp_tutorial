@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include <curl/curl.h>
 using namespace std;
 
 class MainMenu {
     private: 
+    
         static const int OPTIONS_QUANTITY = 10;
         int initializeMainMenuLoop() {
             int input;
